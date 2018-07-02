@@ -39,7 +39,7 @@
         {
           "name": "keyword.control.cfg",
           "match":
-            "(?i)\\b(exec|alias|bind|bindtoggle|unbind|unbindall|volume|showscores|sensitivity|rate|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|host_\\w+|full)\\b"
+            "(?i)\\b(exec|alias|bind|bindtoggle|unbind|unbindall|volume|showscores|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|glow_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|filesystem_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|host_\\w+|full)\\b"
         },
         {
           "name": "keyword.other.cfg",
