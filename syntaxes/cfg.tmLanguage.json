@@ -39,7 +39,7 @@
         {
           "name": "keyword.control.cfg",
           "match":
-            "(?i)\\b(exec|alias|bind|bindtoggle|unbind|unbindall|volume|showscores|sensitivity|rate|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+)\\b"
+            "(?i)\\b(exec|alias|bind|bindtoggle|unbind|unbindall|volume|showscores|sensitivity|rate|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|host_\\w+|full)\\b"
         },
         {
           "name": "keyword.other.cfg",
