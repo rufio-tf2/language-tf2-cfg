@@ -1,0 +1,69 @@
+{
+  "$schema":
+    "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "TF2 cfg",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric",
+          "match": "\\b(\\d+\\.?\\d*)\\b"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.js",
+          "begin": "(//)",
+          "end": "(?=^)"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.cfg",
+          "match":
+            "(?i)\\b(exec|alias|bind|bindtoggle|unbind|unbindall|volume|showscores|sensitivity|rate|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+)\\b"
+        },
+        {
+          "name": "keyword.other.cfg",
+          "match":
+            "(?i)\\b(attack\\d?|jump|duck|say_team|say|disguise|load_itempreset|voicemenu|join_class)\\b"
+        },
+        {
+          "name": "support.class",
+          "match":
+            "(?i)\\b([a-z]|MOUSE\\d?|MWHEELUP|MWHEELDOWN|KP_\\w+|LEFTARROW|UPARROW|RIGHTARROW|DOWNARROW|SPACE|SHIFT|ALT|CTRL|TAB|INS|END|ESCAPE|SEMICOLON|HOME|END|F\\d{1,2})\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.cfg",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.cfg",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.cfg"
+}

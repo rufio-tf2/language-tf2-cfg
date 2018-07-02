@@ -1,0 +1,58 @@
+{
+  "name": "language-tf2-cfg",
+  "displayName": "TF2 .cfg Syntax Highlighting",
+  "description": "Syntax support for Source Engine scripting",
+  "version": "0.0.1",
+  "publisher": "reeddunkle",
+  "engines": {
+    "vscode": "^1.24.0"
+  },
+  "icon": "images/team_fortress_2_logo.png",
+  "galleryBanner": {
+    "color": "#293849",
+    "theme": "dark"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "keywords": [
+    "language",
+    "tf2",
+    "cfg",
+    "source engine",
+    "highlight",
+    "syntax"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/reed-tf2/language-tf2-cfg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reed-tf2/language-tf2-cfg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reed-tf2/language-tf2-cfg/issues",
+    "email": "reed.tf2@gmail.com"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "cfg",
+        "aliases": [
+          "TF2 cfg",
+          "cfg"
+        ],
+        "extensions": [
+          ".cfg"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cfg",
+        "scopeName": "source.cfg",
+        "path": "./syntaxes/cfg.tmLanguage.json"
+      }
+    ]
+  }
+}
