@@ -2,18 +2,16 @@
   "$schema":
     "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "TF2 cfg",
+  "scopeName": "source.cfg",
   "patterns": [
     {
       "include": "#comments"
     },
     {
-      "include": "#errors"
+      "include": "#numeric-literal"
     },
     {
       "include": "#keywords"
-    },
-    {
-      "include": "#numbers"
     },
     {
       "include": "#variables"
@@ -22,18 +20,13 @@
       "include": "#lists"
     },
     {
+      "include": "#strings"
+    },
+    {
       "include": "#punctuation-semicolon"
     }
   ],
   "repository": {
-    "errors": {
-      "patterns": [
-        {
-          "name": "invalid.deprecated",
-          "match": "\\b(show_matchmaking)\\b"
-        }
-      ]
-    },
     "punctuation-semicolon": {
       "patterns": [
         {
@@ -43,7 +36,7 @@
       ]
     },
     "lists": {
-      "name": "meta.type.tuple.js",
+      "name": "meta.type.function.js",
       "begin": "\"",
       "beginCaptures": {
         "0": {
@@ -58,18 +51,15 @@
       },
       "patterns": [
         {
-          "include": "#errors"
+          "name": "string.quoted.double.cfg",
+          "match": ";"
         },
         {
-          "include": "#numbers"
+          "include": "#numeric-literal"
         },
         {
           "include": "#keywords"
         },
-        {
-          "include": "#punctuation-semicolon"
-        },
-
         {
           "include": "#variables"
         }
@@ -83,11 +73,11 @@
         }
       ]
     },
-    "numbers": {
+    "numeric-literal": {
       "patterns": [
         {
           "name": "constant.numeric",
-          "match": "\\b(\\d+\\.?\\d*)\\b"
+          "match": "(-?\\d(?:.\\d)?)"
         }
       ]
     },
@@ -103,27 +93,27 @@
     "keywords": {
       "patterns": [
         {
+          "include": "#deprecated"
+        },
+        {
+          "include": "#buttons"
+        },
+        {
+          "include": "#actions"
+        },
+        {
+          "include": "#settings"
+        }
+      ]
+    },
+    "buttons": {
+      "patterns": [
+        {
           "name": "support.class",
           "match":
             "(?i)\\b(\\w|MOUSE\\d?|MWHEELUP|MWHEELDOWN|KP_\\w+|LEFTARROW|UPARROW|RIGHTARROW|DOWNARROW|SPACE|SHIFT|ALT|CTRL|TAB|INS|END|ESCAPE|SEMICOLON|HOME|END|F\\d{1,2}|PGUP|PGDN|PAUSE)\\b"
         },
         {
-          "name": "keyword.control.cfg",
-          "match":
-            "(?i)\\b(exec|alias|bind|bindtoggle|unbind|unbindall|volume|showscores|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|incrementvar|joy_\\w+|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|glow_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|filesystem_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|ds_\\w+|host_\\w+|full)\\b"
-        },
-        {
-          "name": "keyword.other.cfg",
-          "match":
-            "([\\+|-]attack\\d?|[\\+|-]jump|[\\+|-]duck|[\\+|-]forward|[\\+|-]back|[\\+|-]moveleft|[\\+|-]moveright|[\\+|-]moveup|[\\+|-]movedown|[\\+|-]reload|[\\+|-]inspect|[\\+|-]use_action_slot_item|[\\+|-]voicerecord|[\\+|-]taunt|[\\+|-]lookup|[\\+|-]lookdown)"
-        },
-        {
-          "name": "keyword.other.cfg",
-          "match":
-            "(?i)\\b(say|say_team|say_party|lastinv|impulse|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_charinfo_direct|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|abuse_report_queue|name|lastdisguise|dropitem|slot\\d{1,2})\\b"
-        },
-        {
-          "comment": "symbols",
           "begin": "([\"\\s])(\\/|`|\\'|\\[|\\]|\\.|\\-|,|\\\\)([\"\\s])",
           "beginCaptures": {
             "2": {
@@ -139,7 +129,52 @@
           "end": ""
         }
       ]
+    },
+    "actions": {
+      "patterns": [
+        {
+          "name": "keyword.other.cfg",
+          "match":
+            "(?i)([\\+|-]attack\\d?|[\\+|-]jump|[\\+|-]duck|[\\+|-]forward|[\\+|-]back|[\\+|-]moveleft|[\\+|-]moveright|[\\+|-]moveup|[\\+|-]movedown|[\\+|-]reload|[\\+|-]inspect|[\\+|-]use_action_slot_item|[\\+|-]voicerecord|[\\+|-]taunt|[\\+|-]lookup|[\\+|-]lookdown|[\\+|-]showscores|[\\+|-]strafe|[\\+|-]klook|[\\+|-]showroundinfo)"
+        },
+        {
+          "name": "keyword.other.cfg",
+          "match":
+            "(?i)\\b(say|say_team|say_party|lastinv|impulse|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_charinfo_\\w+|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|abuse_report_queue|name|lastdisguise|dropitem|centerview|showmapinfo|inspect|invnext|invprev|slot\\d{1,2})\\b"
+        }
+      ]
+    },
+    "settings": {
+      "patterns": [
+        {
+          "name": "keyword.control.cfg",
+          "match":
+            "(?i)\\b(exec|alias|bind|bindtoggle|unbind|unbindall|volume|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|incrementvar|joy_\\w+|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|glow_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|filesystem_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|ds_\\w+|host_\\w+|full)\\b"
+        }
+      ]
+    },
+    "deprecated": {
+      "patterns": [
+        {
+          "name": "invalid.deprecated",
+          "match": "\\b(show_matchmaking|saveme)\\b"
+        },
+        {
+          "name": "invalid.deprecated",
+          "match": "([\\+|-]mlook)"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.cfg",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.cfg",
+          "match": "\\\\."
+        }
+      ]
     }
-  },
-  "scopeName": "source.cfg"
+  }
 }
