@@ -8,16 +8,16 @@
       "include": "#comments"
     },
     {
-      "include": "#numeric-literal"
+      "include": "#commands"
     },
     {
-      "include": "#keywords"
+      "include": "#numeric-literal"
     },
     {
       "include": "#variables"
     },
     {
-      "include": "#lists"
+      "include": "#command-lists"
     },
     {
       "include": "#strings"
@@ -35,7 +35,7 @@
         }
       ]
     },
-    "lists": {
+    "command-lists": {
       "name": "meta.type.function.js",
       "begin": "\"",
       "beginCaptures": {
@@ -55,10 +55,10 @@
           "match": ";"
         },
         {
-          "include": "#numeric-literal"
+          "include": "#commands"
         },
         {
-          "include": "#keywords"
+          "include": "#numeric-literal"
         },
         {
           "include": "#variables"
@@ -90,10 +90,10 @@
         }
       ]
     },
-    "keywords": {
+    "commands": {
       "patterns": [
         {
-          "include": "#deprecated"
+          "include": "#unknown"
         },
         {
           "include": "#buttons"
@@ -110,8 +110,16 @@
       "patterns": [
         {
           "name": "support.class",
+          "match": "(?<=bind\\s)\\d"
+        },
+        {
+          "name": "support.class",
+          "match": "(?<=bind\\s\")\\d"
+        },
+        {
+          "name": "support.class",
           "match":
-            "(?i)\\b(\\w|MOUSE\\d?|MWHEELUP|MWHEELDOWN|KP_\\w+|LEFTARROW|UPARROW|RIGHTARROW|DOWNARROW|SPACE|SHIFT|ALT|CTRL|TAB|INS|END|ESCAPE|SEMICOLON|HOME|END|F\\d{1,2}|PGUP|PGDN|PAUSE)\\b"
+            "(?i)\\b([A-Z]|MOUSE\\d?|MWHEELUP|MWHEELDOWN|KP_\\w+|LEFTARROW|UPARROW|RIGHTARROW|DOWNARROW|SPACE|SHIFT|ALT|CTRL|TAB|INS|END|ESCAPE|SEMICOLON|HOME|END|F\\d{1,2}|PGUP|PGDN|PAUSE)\\b"
         },
         {
           "begin": "([\"\\s])(\\/|`|\\'|\\[|\\]|\\.|\\-|,|\\\\)([\"\\s])",
@@ -140,7 +148,7 @@
         {
           "name": "keyword.other.cfg",
           "match":
-            "(?i)\\b(say|say_team|say_party|lastinv|impulse|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_charinfo_\\w+|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|abuse_report_queue|name|lastdisguise|dropitem|centerview|showmapinfo|inspect|invnext|invprev|slot\\d{1,2})\\b"
+            "(?i)\\b(say|say_team|say_party|lastinv|impulse|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_charinfo_\\w+|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|askconnect_accept|abuse_report_queue|name|lastdisguise|dropitem|centerview|showmapinfo|inspect|invnext|invprev|slot\\d{1,2})\\b"
         }
       ]
     },
@@ -153,7 +161,7 @@
         }
       ]
     },
-    "deprecated": {
+    "unknown": {
       "patterns": [
         {
           "name": "invalid.deprecated",
@@ -161,7 +169,7 @@
         },
         {
           "name": "invalid.deprecated",
-          "match": "([\\+|-]mlook)"
+          "match": "([\\+|-]mlook|[\\+|-]alt[1|2])"
         }
       ]
     },
