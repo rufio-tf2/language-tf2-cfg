@@ -143,7 +143,7 @@
         {
           "name": "keyword.other.cfg",
           "match":
-            "(?i)([\\+|-]attack\\d?|[\\+|-]jump|[\\+|-]duck|[\\+|-]forward|[\\+|-]back|[\\+|-]moveleft|[\\+|-]moveright|[\\+|-]moveup|[\\+|-]movedown|[\\+|-]reload|[\\+|-]inspect|[\\+|-]use_action_slot_item|[\\+|-]voicerecord|[\\+|-]taunt|[\\+|-]lookup|[\\+|-]lookdown|[\\+|-]showscores|[\\+|-]strafe|[\\+|-]klook|[\\+|-]showroundinfo)"
+            "(?i)([\\+|-]attack\\d?\\b|[\\+|-]jump\\b|[\\+|-]duck|\\b[\\+|-]forward|\\b[\\+|-]back|\\b[\\+|-]moveleft\\b|[\\+|-]moveright|\\b[\\+|-]moveup|\\b[\\+|-]movedown|\\b[\\+|-]reload|\\b[\\+|-]inspect|\\b[\\+|-]use_action_slot_item\\b|[\\+|-]voicerecord|\\b[\\+|-]taunt|\\b[\\+|-]lookup|\\b[\\+|-]lookdown|\\b[\\+|-]showscores|\\b[\\+|-]strafe|\\b[\\+|-]klook\\b|[\\+|-]showroundinfo)"
         },
         {
           "name": "keyword.other.cfg",
