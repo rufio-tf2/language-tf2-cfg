@@ -28,6 +28,38 @@ This is the grammar I'm tagging:
 - Command List (`"+jump; +duck; +attack;"`)
 - Punctuation-Semicolon
 
+## Install
+
+[Download](https://github.com/reed-tf2/language-tf2-cfg/archive/master.zip) and unzip, or `clone` this package. Move the (unzipped) `language-tf2-cfg` folder into your `~/.vscode/extensions/` folder.
+
+Typically on Windows this is:
+
+```powershell
+# Replace USERNAME with your user name
+C:\Users\USERNAME\.vscode\extensions\
+```
+
+You might need to restart VS Code.
+
+## Setup
+
+<img src="./images/setup.png" height="75%" width="75%" />
+
+1.  Open a `.cfg` file
+1.  Click at the bottom right to change its "File Association" (Or press `Ctrl+K, Ctrl+M`)
+1.  Select, `Configure File Association for '.cfg'...`
+1.  Select `TF2 cfg` from the list
+
+### Alternatively...
+
+You can open your user settings (`Ctrl+,`) and add
+
+```json
+"files.associations": {
+  "*.cfg": "cfg"
+}
+```
+
 ## Known Issues
 
 - Not [all](https://developer.valvesoftware.com/wiki/List_of_TF2_console_commands_and_variables) commands have been included yet
