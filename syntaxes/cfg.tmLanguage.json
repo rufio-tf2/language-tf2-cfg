@@ -20,9 +20,6 @@
       "include": "#command-lists"
     },
     {
-      "include": "#strings"
-    },
-    {
       "include": "#punctuation-semicolon"
     }
   ],
@@ -170,17 +167,6 @@
         {
           "name": "invalid.deprecated",
           "match": "([\\+|-]mlook|[\\+|-]alt[1|2])"
-        }
-      ]
-    },
-    "strings": {
-      "name": "string.quoted.double.cfg",
-      "begin": "\"",
-      "end": "\"",
-      "patterns": [
-        {
-          "name": "constant.character.escape.cfg",
-          "match": "\\\\."
         }
       ]
     }
