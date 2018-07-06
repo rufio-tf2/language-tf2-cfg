@@ -11,7 +11,9 @@ Adds highlighting support for `.cfg` files
   </tr>
 </table>
 
-> Taken from b4nny's [config](https://drive.google.com/file/d/1S9bcuSHauGUSNlrOP93zm5kOlynnWG8V/view)
+<blockquote>
+  <p>Taken from b4nny's <a href="https://drive.google.com/file/d/1S9bcuSHauGUSNlrOP93zm5kOlynnWG8V/view" target="_blank">config</a></p>
+</blockquote>
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
