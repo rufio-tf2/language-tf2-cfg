@@ -43,6 +43,8 @@ You might need to restart VS Code.
 
 ## Setup
 
+<img src="./images/setup.png" />
+
 1.  Open a `.cfg` file
 1.  Click at the bottom right to change its "File Association" (Or press `Ctrl+K, Ctrl+M`)
 1.  Select, "Configure File Association for '.cfg'..."
