@@ -23,7 +23,7 @@ This is the grammar I'm tagging:
 - Comment
 - Command
   - Unknown (deprecated, unused, or just unknown)
-  - [Buttons](https://wiki.teamfortress.com/wiki/Scripting#List_of_key_names) (`SPACE`, `MOUSE1`)
+  - [Buttons/Keys](https://wiki.teamfortress.com/wiki/Scripting#List_of_key_names) (`SPACE`, `MOUSE1`)
   - Actions (`+attack`, `say_team`)
   - Settings (`alias`, `bind`, `r_drawviewmodel`)
 - Numeric-Literal
