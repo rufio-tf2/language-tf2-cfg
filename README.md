@@ -15,12 +15,12 @@ Adds syntax highlighting support for `.cfg` files
   <p>Taken from b4nny's <a href="https://drive.google.com/file/d/1S9bcuSHauGUSNlrOP93zm5kOlynnWG8V/view" target="_blank">config</a></p>
 </blockquote>
 
-This is the grammar I'm looking for:
+This is the grammar I'm tagging:
 
 - Comment
 - Command
   - Unknown (deprecated, unused, or just unknown)
-  - Buttons (`SPACE`, `MOUSE1`)
+  - [Buttons](https://wiki.teamfortress.com/wiki/Scripting#List_of_key_names) (`SPACE`, `MOUSE1`)
   - Actions (`+attack`, `say_team`)
   - Settings (`bind`, `r_drawviewmodel`)
 - Numberic-Literal
@@ -37,8 +37,6 @@ This is the grammar I'm looking for:
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 0.0.1
 
-:construction: Still getting things into shape.
+:construction: Still getting things into shape
