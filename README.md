@@ -1,13 +1,13 @@
 # TF2 cfg syntax highlighting
 
-Adds highlighting support for `.cfg` files
+Adds syntax highlighting support for `.cfg` files
 
 ## Features
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/SSHPKrn.png" alt="Example without syntax highlighting" /></td>
-    <td><img src="https://i.imgur.com/OCPCUSP.png" alt="Example with syntax highlighting" /></td>
+    <td><img src="./images/b4nny_no_highlighting" alt="Example without syntax highlighting" /></td>
+    <td><img src="./images/b4nny_with_highlighting" alt="Example with syntax highlighting" /></td>
   </tr>
 </table>
 
