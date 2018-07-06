@@ -148,7 +148,7 @@
         {
           "name": "keyword.other.cfg",
           "match":
-            "(?i)\\b(say|say_team|say_party|lastinv|impulse|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_charinfo_\\w+|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|askconnect_accept|abuse_report_queue|name|lastdisguise|dropitem|centerview|showmapinfo|inspect|invnext|invprev|slot\\d{1,2})\\b"
+            "(?i)\\b(say|say_team|say_party|lastinv|impulse|build|destroy|eureka_teleport|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_charinfo_\\w+|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|askconnect_accept|abuse_report_queue|name|lastdisguise|dropitem|centerview|showmapinfo|inspect|invnext|invprev|wait|taunt_by_name|slot\\d{1,2})\\b"
         }
       ]
     },
@@ -157,7 +157,7 @@
         {
           "name": "keyword.control.cfg",
           "match":
-            "(?i)\\b(exec|alias|bind|bindtoggle|unbind|unbindall|volume|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|incrementvar|joy_\\w+|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|glow_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|filesystem_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|ds_\\w+|host_\\w+|full)\\b"
+            "(?i)\\b(exec|alias|bind|bindtoggle|toggle|unbind|unbindall|volume|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|incrementvar|joy_\\w+|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|glow_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|filesystem_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|ds_\\w+|host_\\w+|full)\\b"
         }
       ]
     },
