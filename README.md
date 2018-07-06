@@ -6,8 +6,8 @@ Adds syntax highlighting support for `.cfg` files
 
 <table>
   <tr>
-    <td><img src="./images/b4nny_no_highlighting" alt="Example without syntax highlighting" /></td>
-    <td><img src="./images/b4nny_with_highlighting" alt="Example with syntax highlighting" /></td>
+    <td><img src="./images/b4nny_no_highlighting.png" alt="Example without syntax highlighting" /></td>
+    <td><img src="./images/b4nny_with_highlighting.png" alt="Example with syntax highlighting" /></td>
   </tr>
 </table>
 
