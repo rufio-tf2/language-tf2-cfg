@@ -5,7 +5,7 @@ Adds syntax highlighting support for `.cfg` files
 ## Features
 
 <blockquote>
-  <p>Taken from b4nny's <a href="https://drive.google.com/file/d/1S9bcuSHauGUSNlrOP93zm5kOlynnWG8V/view" target="_blank">config</a>
+  <p><code>medic.cfg</code> adapted from b4nny's <a href="https://drive.google.com/file/d/1S9bcuSHauGUSNlrOP93zm5kOlynnWG8V/view" target="_blank">config</a>
 </blockquote>
 <table>
   <tr>
