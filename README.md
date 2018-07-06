@@ -4,6 +4,15 @@ Adds highlighting support for `.cfg` files
 
 ## Features
 
+<table>
+  <tr>
+    <td><img src="https://i.imgur.com/SSHPKrn.png" alt="Example without syntax highlighting" /></td>
+    <td><img src="https://i.imgur.com/OCPCUSP.png" alt="Example with syntax highlighting" /></td>
+  </tr>
+</table>
+
+> Taken from b4nny's [config](https://drive.google.com/file/d/1S9bcuSHauGUSNlrOP93zm5kOlynnWG8V/view)
+
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 For example if there is an image subfolder under your extension project workspace:
