@@ -47,10 +47,11 @@ You might need to restart VS Code.
 
 1.  Open a `.cfg` file
 1.  Click at the bottom right to change its "File Association" (Or press `Ctrl+K, Ctrl+M`)
-1.  Select, "Configure File Association for '.cfg'..."
-1.  Select "TF2 cfg" from the list
+1.  Select, `Configure File Association for '.cfg'...`
+1.  Select `TF2 cfg` from the list
 
-**Alternatively...**
+### Alternatively...
+
 You can open your user settings (`Ctrl+,`) and add
 
 ```json
