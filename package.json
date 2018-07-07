@@ -2,7 +2,7 @@
   "name": "language-tf2-cfg",
   "displayName": "TF2 .cfg Syntax Highlighting",
   "description": "Syntax support for Source Engine scripting",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "reeddunkle",
   "engines": {
     "vscode": "^1.24.0"
@@ -13,7 +13,7 @@
     "theme": "dark"
   },
   "categories": [
-    "Languages"
+    "Scripting Languages"
   ],
   "keywords": [
     "language",
@@ -36,7 +36,7 @@
   "contributes": {
     "languages": [
       {
-        "id": "cfg",
+        "id": "TF2 cfg",
         "aliases": [
           "TF2 cfg",
           "cfg"
@@ -49,7 +49,7 @@
     ],
     "grammars": [
       {
-        "language": "cfg",
+        "language": "TF2 cfg",
         "scopeName": "source.cfg",
         "path": "./syntaxes/cfg.tmLanguage.json"
       }
