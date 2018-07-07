@@ -140,12 +140,16 @@
         {
           "name": "keyword.other.cfg",
           "match":
-            "(?i)([\\+|-]attack\\d?\\b|[\\+|-]jump\\b|[\\+|-]duck|\\b[\\+|-]forward|\\b[\\+|-]back|\\b[\\+|-]moveleft\\b|[\\+|-]moveright|\\b[\\+|-]moveup|\\b[\\+|-]movedown|\\b[\\+|-]reload|\\b[\\+|-]inspect|\\b[\\+|-]use_action_slot_item\\b|[\\+|-]voicerecord|\\b[\\+|-]taunt|\\b[\\+|-]lookup|\\b[\\+|-]lookdown|\\b[\\+|-]showscores|\\b[\\+|-]strafe|\\b[\\+|-]klook\\b|[\\+|-]showroundinfo)"
+            "(?i)([\\+|-]attack\\d?|[\\+|-]jump|[\\+|-]duck|[\\+|-]forward|[\\+|-]back|[\\+|-]moveleft|[\\+|-]moveright|[\\+|-]moveup|[\\+|-]movedown|[\\+|-]reload|[\\+|-]inspect|[\\+|-]use_action_slot_item|[\\+|-]voicerecord|[\\+|-]taunt|[\\+|-]lookup|[\\+|-]lookdown|[\\+|-]showscores|[\\+|-]strafe|[\\+|-]klook|[\\+|-]showroundinfo|[\\+|-]camdistance|[\\+|-]camin|[\\+|-]camout|[\\+|-]cammousemove|[\\+|-]campitchdown|[\\+|-]campitchup|[\\+|-]camyawleft|[\\+|-]camyawright)\\b"
         },
         {
           "name": "keyword.other.cfg",
           "match":
             "(?i)\\b(say|say_team|say_party|lastinv|impulse|build|destroy|eureka_teleport|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_charinfo_\\w+|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|askconnect_accept|abuse_report_queue|name|lastdisguise|dropitem|centerview|showmapinfo|inspect|invnext|invprev|wait|taunt_by_name|slot\\d{1,2})\\b"
+        },
+        {
+          "name": "keyword.other.cfg",
+          "match": "(?i)\\b(spec_\\w+)\\b"
         }
       ]
     },
@@ -154,7 +158,7 @@
         {
           "name": "keyword.control.cfg",
           "match":
-            "(?i)\\b(exec|alias|bind|bindtoggle|toggle|unbind|unbindall|volume|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|incrementvar|joy_\\w+|fov_\\w+|viewmodel\\w+|m_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|glow_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|filesystem_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|ds_\\w+|host_\\w+|full)\\b"
+            "(?i)\\b(exec|alias|bind|bind_mac|bindtoggle|toggle|unbind|unbindall|volume|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|incrementvar|joy_\\w+|fov_\\w+|viewmodel\\w+|m_\\w+|map_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|obj_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|demo_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|nav_\\w+|filesystem_\\w+|budget__\\w+|c_\\w+|cache_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|ent_\\w+|fire_\\w+|fog_\\w+|ifm_\\w+|ds_\\w+|host_\\w+|cc_\\w+|g_\\w+|gameui_\\w+|full|blink_duration|bloodspray|bot|bot_\\w+)\\b"
         }
       ]
     },
@@ -162,7 +166,7 @@
       "patterns": [
         {
           "name": "invalid.deprecated",
-          "match": "\\b(show_matchmaking|saveme)\\b"
+          "match": "\\b(show_matchmaking|saveme|god)\\b"
         },
         {
           "name": "invalid.deprecated",
