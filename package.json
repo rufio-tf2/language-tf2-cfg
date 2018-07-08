@@ -25,10 +25,7 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/reed-tf2/language-tf2-cfg",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/reed-tf2/language-tf2-cfg.git"
-  },
+  "repository": "https://github.com/reed-tf2/language-tf2-cfg",
   "bugs": {
     "url": "https://github.com/reed-tf2/language-tf2-cfg/issues",
     "email": "reed.tf2@gmail.com"
