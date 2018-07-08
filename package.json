@@ -16,12 +16,11 @@
     "Programming Languages"
   ],
   "keywords": [
-    "language",
+    "scripting",
     "tf2",
     "cfg",
     "source engine",
-    "highlight",
-    "syntax"
+    "highlight"
   ],
   "license": "MIT",
   "repository": "https://github.com/reed-tf2/language-tf2-cfg",
