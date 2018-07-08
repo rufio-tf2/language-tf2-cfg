@@ -28,7 +28,7 @@ This is the grammar I'm tagging:
   - Settings (`alias`, `bind`, `r_drawviewmodel`)
 - Numeric-Literal
 - Variable (custom commands)
-- Command List (`"+jump; +duck; +attack;"`)
+- Macros (`"+jump; +duck; +attack;"`)
 - Punctuation-Semicolon
 
 ## Install
@@ -77,6 +77,11 @@ Note that you can change/control the [Color Theme](https://code.visualstudio.com
 - Ideally there'd be a custom color theme with property scope names (currently I'm using at least one `.js` name)
 
 ## Release Notes
+
+### v0.0.3
+
+:recycle: Rename "command-list" to "macro"
+:recycle: Remove plural "s" from Regex patterns
 
 ### v0.0.2
 
