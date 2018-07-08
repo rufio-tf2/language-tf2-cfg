@@ -34,7 +34,7 @@ This is the grammar I'm tagging:
 ## Install
 
 <ol>
-  <li><a href="https://code.visualstudio.com/Download">Download</a></li>
+  <li><a href="https://code.visualstudio.com/Download">Download</a> VS Code</li>
   <li>
     <p>Install the extension</p>
     <img src="https://i.imgur.com/IeOIXzc.png" alt="Install through VS Code" height="50%" width="50%" />
