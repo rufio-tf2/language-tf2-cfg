@@ -7,7 +7,7 @@
   "engines": {
     "vscode": "^1.24.0"
   },
-  "icon": "./images/team_fortress_2_logo.png",
+  "icon": "images/team_fortress_2_logo.png",
   "galleryBanner": {
     "color": "#293849",
     "theme": "dark"
