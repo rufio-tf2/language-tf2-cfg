@@ -2,7 +2,7 @@
   "name": "language-tf2-cfg",
   "displayName": "TF2 .cfg Syntax Highlighting",
   "description": "Syntax support for Source Engine scripting",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "reeddunkle",
   "engines": {
     "vscode": "^1.24.0"
