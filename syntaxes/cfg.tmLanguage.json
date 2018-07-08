@@ -5,19 +5,19 @@
   "scopeName": "source.cfg",
   "patterns": [
     {
-      "include": "#comments"
+      "include": "#comment"
     },
     {
-      "include": "#commands"
+      "include": "#command"
     },
     {
       "include": "#numeric-literal"
     },
     {
-      "include": "#variables"
+      "include": "#variable"
     },
     {
-      "include": "#command-lists"
+      "include": "#macro"
     },
     {
       "include": "#punctuation-semicolon"
@@ -32,7 +32,7 @@
         }
       ]
     },
-    "command-lists": {
+    "macro": {
       "name": "meta.type.function.js",
       "begin": "\"",
       "beginCaptures": {
@@ -52,17 +52,17 @@
           "match": ";"
         },
         {
-          "include": "#commands"
+          "include": "#command"
         },
         {
           "include": "#numeric-literal"
         },
         {
-          "include": "#variables"
+          "include": "#variable"
         }
       ]
     },
-    "variables": {
+    "variable": {
       "patterns": [
         {
           "name": "variable.other.readwrite.js",
@@ -78,7 +78,7 @@
         }
       ]
     },
-    "comments": {
+    "comment": {
       "patterns": [
         {
           "name": "comment.line.double-slash.js",
@@ -87,7 +87,7 @@
         }
       ]
     },
-    "commands": {
+    "command": {
       "patterns": [
         {
           "include": "#unknown"
