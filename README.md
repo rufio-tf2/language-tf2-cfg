@@ -33,7 +33,9 @@ This is the grammar I'm tagging:
 
 ## Install
 
-[Download](https://github.com/reed-tf2/language-tf2-cfg/archive/master.zip) and unzip, or `clone` this package. Move the (unzipped) `language-tf2-cfg` folder into your `~/.vscode/extensions/` folder.
+1.  [Download](https://code.visualstudio.com/Download) and setup VS Code.
+1.  [Download](https://github.com/reed-tf2/language-tf2-cfg/archive/master.zip) and unzip, or `clone` this package.
+1.  Move the (unzipped) `language-tf2-cfg` folder into your `~/.vscode/extensions/` folder.
 
 Typically on Windows this is:
 
