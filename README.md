@@ -33,18 +33,17 @@ This is the grammar I'm tagging:
 
 ## Install
 
-1.  [Download](https://code.visualstudio.com/Download) and setup VS Code.
-1.  [Download](https://github.com/reed-tf2/language-tf2-cfg/archive/master.zip) and unzip, or `clone` this package.
-1.  Move the (unzipped) `language-tf2-cfg` folder into your `~/.vscode/extensions/` folder.
-
-Typically on Windows this is:
-
-```powershell
-# Replace USERNAME with your user name
-C:\Users\USERNAME\.vscode\extensions\
-```
-
-You might need to restart VS Code.
+<ol>
+  <li><a href="https://code.visualstudio.com/Download">Download</a></li>
+  <li>
+    <p>Install the extension</p>
+    <img src="https://i.imgur.com/IeOIXzc.png" alt="Install through VS Code" />
+  </li>
+  <li>
+    <p>Press reload</p>
+    <img src="https://i.imgur.com/oN28TYy.png" alt="Reload VS Code" />
+  </li>
+</ol>
 
 ## Setup
 
