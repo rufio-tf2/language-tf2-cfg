@@ -7,13 +7,13 @@
   "engines": {
     "vscode": "^1.24.0"
   },
-  "icon": "images/team_fortress_2_logo.png",
+  "icon": "https://i.imgur.com/deiAQSs.png",
   "galleryBanner": {
     "color": "#293849",
     "theme": "dark"
   },
   "categories": [
-    "Scripting Languages"
+    "Programming Languages"
   ],
   "keywords": [
     "language",
@@ -24,7 +24,6 @@
     "syntax"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/reed-tf2/language-tf2-cfg",
   "repository": "https://github.com/reed-tf2/language-tf2-cfg",
   "bugs": {
     "url": "https://github.com/reed-tf2/language-tf2-cfg/issues",
