@@ -9,8 +9,8 @@ Adds syntax highlighting support for `.cfg` files
 </blockquote>
 <table>
   <tr>
-    <td><img src="./images/b4nny_no_highlighting.png" alt="Example without syntax highlighting" /></td>
-    <td><img src="./images/b4nny_with_highlighting.png" alt="Example with syntax highlighting" /></td>
+    <td><img src="https://i.imgur.com/SSHPKrn.png" alt="Example without syntax highlighting" /></td>
+    <td><img src="https://i.imgur.com/OCPCUSP.png" alt="Example with syntax highlighting" /></td>
   </tr>
   <tr>
     <td><i>Plain Text</i></td>
@@ -46,7 +46,7 @@ You might need to restart VS Code.
 
 ## Setup
 
-<img src="./images/setup.png" height="75%" width="75%" />
+<img src="https://i.imgur.com/ARqR6MK.png" height="75%" width="75%" />
 
 1.  Open a `.cfg` file
 1.  Click at the bottom right to change its "File Association" (Or press `Ctrl+K, Ctrl+M`)
@@ -67,7 +67,7 @@ You can open your user settings (`Ctrl+,`) and add
 
 Note that you can change/control the [Color Theme](https://code.visualstudio.com/docs/getstarted/themes):
 
-<img src="./images/color_theme.png" height="75%" width="75%" />
+<img src="https://i.imgur.com/7teYynx.png" height="75%" width="75%" />
 
 ## Known Issues
 
