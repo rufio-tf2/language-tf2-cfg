@@ -37,11 +37,11 @@ This is the grammar I'm tagging:
   <li><a href="https://code.visualstudio.com/Download">Download</a></li>
   <li>
     <p>Install the extension</p>
-    <img src="https://i.imgur.com/IeOIXzc.png" alt="Install through VS Code" />
+    <img src="https://i.imgur.com/IeOIXzc.png" alt="Install through VS Code" height="50%" width="50%" />
   </li>
   <li>
     <p>Press reload</p>
-    <img src="https://i.imgur.com/oN28TYy.png" alt="Reload VS Code" />
+    <img src="https://i.imgur.com/oN28TYy.png" alt="Reload VS Code" height="50%" width="50%" />
   </li>
 </ol>
 
