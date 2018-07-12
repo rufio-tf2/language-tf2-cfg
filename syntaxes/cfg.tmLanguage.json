@@ -106,32 +106,19 @@
     "buttons": {
       "patterns": [
         {
-          "name": "support.class",
-          "match": "(?<=bind\\s)\\d"
-        },
-        {
-          "name": "support.class",
-          "match": "(?<=bind\\s\")\\d"
-        },
-        {
-          "name": "support.class",
           "match":
-            "(?i)\\b([A-Z]|MOUSE\\d?|MWHEELUP|MWHEELDOWN|KP_\\w+|LEFTARROW|UPARROW|RIGHTARROW|DOWNARROW|SPACE|SHIFT|ALT|CTRL|TAB|INS|END|ESCAPE|SEMICOLON|HOME|END|F\\d{1,2}|PGUP|PGDN|PAUSE)\\b"
-        },
-        {
-          "begin": "([\"\\s])(\\/|`|\\'|\\[|\\]|\\.|\\-|,|\\\\)([\"\\s])",
-          "beginCaptures": {
-            "2": {
-              "name": "support.class"
-            },
+            "(?i)(?:(?<=bind\\s)|(?<=bindtoggle\\s))(\")?(\\d|[a-z]|MOUSE\\d?|MWHEELUP|MWHEELDOWN|KP_\\w+|LEFTARROW|UPARROW|RIGHTARROW|DOWNARROW|SPACE|SHIFT|ALT|CTRL|TAB|INS|END|ESCAPE|SEMICOLON|HOME|END|F\\d{1,2}|PGUP|PGDN|PAUSE|\\/|`|\\'|\\[|\\]|\\.|\\-|,|\\\\)(\")?\\s",
+          "captures": {
             "1": {
               "name": "string.quoted.double.cfg"
             },
             "3": {
               "name": "string.quoted.double.cfg"
+            },
+            "2": {
+              "name": "support.class"
             }
-          },
-          "end": ""
+          }
         }
       ]
     },
