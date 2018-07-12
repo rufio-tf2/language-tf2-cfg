@@ -79,16 +79,6 @@ Note that you can change/control the [Color Theme](https://code.visualstudio.com
 
 ## Release Notes
 
-### v0.0.3
+### v0.0.6
 
-:recycle: Rename "command-list" to "macro"
-:recycle: Remove plural "s" from Regex patterns
-
-### v0.0.2
-
-:recycle: Change name in VS Code to "TF2 cfg"
-:warning: Will require reload coming from `v0.0.1`
-
-### v0.0.1
-
-:construction: Still getting things into shape
+- :wrench: Improve regex
