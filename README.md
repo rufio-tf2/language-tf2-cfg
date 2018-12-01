@@ -82,3 +82,7 @@ Note that you can change/control the [Color Theme](https://code.visualstudio.com
 ### v0.0.6
 
 - :wrench: Improve regex
+
+## Unlicense
+
+This is free is all senses of the word. [UNLICENSE](./UNLICENSE)

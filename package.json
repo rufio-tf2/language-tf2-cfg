@@ -22,7 +22,7 @@
     "source engine",
     "highlight"
   ],
-  "license": "MIT",
+  "license": "Unlicense",
   "repository": "https://github.com/reed-tf2/language-tf2-cfg",
   "bugs": {
     "url": "https://github.com/reed-tf2/language-tf2-cfg/issues",
