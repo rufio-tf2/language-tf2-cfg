@@ -65,14 +65,14 @@
 			"patterns": [
 				{
 					"name": "constant.numeric",
-					"match": "(-?\\d(?:.\\d)?)"
+					"match": "((?<!\\/\\/.*)(?<=\\s|\")-?[0-9.]*\\d[0-9.]*(?=\\n|\\s|;|\"))"
 				}
 			]
 		},
 		"comment": {
 			"patterns": [
 				{
-					"name": "comment.line.double-slash.js",
+					"name": "comment.line.double-slash.cfg",
 					"begin": "(//)",
 					"end": "(?=^)"
 				}
@@ -90,14 +90,14 @@
 					"include": "#actions"
 				},
 				{
-					"include": "#settings"
+					"include": "#commands"
 				}
 			]
 		},
 		"buttons": {
 			"patterns": [
 				{
-					"match": "(?i)(?:(?<=bind\\s)|(?<=bindtoggle\\s))(\")?(\\d|[a-z]|MOUSE\\d?|MWHEELUP|MWHEELDOWN|KP_\\w+|LEFTARROW|UPARROW|RIGHTARROW|DOWNARROW|SPACE|SHIFT|ALT|CTRL|TAB|INS|END|ESCAPE|SEMICOLON|HOME|END|F\\d{1,2}|PGUP|PGDN|PAUSE|\\/|`|\\'|\\[|\\]|\\.|\\-|,|\\\\)(\")?\\s",
+					"match": "(?i)(?:(?<=bind\\s)|(?<=bindtoggle\\s))(\")?(\\d|[a-z]|MOUSE\\d?|MWHEELUP|MWHEELDOWN|KP_\\w+|LEFTARROW|UPARROW|RIGHTARROW|DOWNARROW|SPACE|SHIFT|ALT|CTRL|TAB|INS|END|ESCAPE|SEMICOLON|HOME|END|F\\d{1,2}|PGUP|PGDN|PAUSE|\\/|`|\\'|\\[|\\]|\\.|\\-|,|\\\\)(\")?(?=\\n|\\s|;)",
 					"captures": {
 						"1": {
 							"name": "string.quoted.double.cfg"
@@ -116,11 +116,11 @@
 			"patterns": [
 				{
 					"name": "keyword.other.cfg",
-					"match": "(?i)([\\+|-]attack\\d?|[\\+|-]jump|[\\+|-]duck|[\\+|-]forward|[\\+|-]back|[\\+|-]moveleft|[\\+|-]moveright|[\\+|-]moveup|[\\+|-]movedown|[\\+|-]reload|[\\+|-]inspect|[\\+|-]use_action_slot_item|[\\+|-]voicerecord|[\\+|-]taunt|[\\+|-]lookup|[\\+|-]lookdown|[\\+|-]showscores|[\\+|-]strafe|[\\+|-]klook|[\\+|-]showroundinfo|[\\+|-]camdistance|[\\+|-]camin|[\\+|-]camout|[\\+|-]cammousemove|[\\+|-]campitchdown|[\\+|-]campitchup|[\\+|-]camyawleft|[\\+|-]camyawright)\\b"
+					"match": "(?i)([\\+|-]attack\\d?|[\\+|-]jump|[\\+|-]duck|[\\+|-]forward|[\\+|-]back|[\\+|-]moveleft|[\\+|-]moveright|[\\+|-]moveup|[\\+|-]movedown|[\\+|-]reload|[\\+|-]inspect|[\\+|-]use_action_slot_item|[\\+|-]voicerecord|[\\+|-]taunt|[\\+|-]lookup|[\\+|-]lookdown|[\\+|-]showscores|[\\+|-]strafe|[\\+|-]klook|[\\+|-]showroundinfo|[\\+|-]camdistance|[\\+|-]camin|[\\+|-]camout|[\\+|-]cammousemove|[\\+|-]campitchdown|[\\+|-]campitchup|[\\+|-]camyawleft|[\\+|-]camyawright|[\\+|-]score)\\b"
 				},
 				{
 					"name": "keyword.other.cfg",
-					"match": "(?i)\\b(say|say_team|say_party|lastinv|impulse|build|destroy|eureka_teleport|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_charinfo_\\w+|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|askconnect_accept|abuse_report_queue|name|lastdisguise|dropitem|centerview|showmapinfo|inspect|invnext|invprev|wait|taunt_by_name|slot\\d{1,2})\\b"
+					"match": "(?i)\\b(say|say_team|say_party|lastinv|impulse|build|destroy|eureka_teleport|disguise|load_itempreset|voicemenu|voice_menu_\\d|join_class|vote|changeclass|changeteam|open_\\w+|show_quest_log|disguiseteam|cancelselect|pause|quit|toggleconsole|screenshot|save_replay|askconnect_accept|abuse_report_queue|name|lastdisguise|dropitem|centerview|showmapinfo|inspect|invnext|invprev|wait|taunt_by_name|taunt|slot\\d{1,2})\\b"
 				},
 				{
 					"name": "keyword.other.cfg",
@@ -128,11 +128,11 @@
 				}
 			]
 		},
-		"settings": {
+		"commands": {
 			"patterns": [
 				{
 					"name": "keyword.control.cfg",
-					"match": "(?i)\\b(exec|echo|alias|bind|bind_mac|bindtoggle|toggle|unbind|unbindall|volume|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|incrementvar|joy_\\w+|fov_\\w+|viewmodel\\w+|m_\\w+|map_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|obj_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|demo_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|nav_\\w+|filesystem_\\w+|budget__\\w+|c_\\w+|cache_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|ent_\\w+|fire_\\w+|fog_\\w+|ifm_\\w+|ds_\\w+|host_\\w+|cc_\\w+|g_\\w+|gameui_\\w+|full|blink_duration|bloodspray|bot|bot_\\w+|set\\w+)\\b"
+						"match": "(?i)\\b(exec|echo|alias|bind|bind_mac|bindtoggle|toggle|unbind|unbindall|volume|crosshair|sensitivity|rate|map|deathmatch|tracer_extra|in_usekeyboardsampletime|joystick|fast_fogvolume|incrementvar|joy_\\w+|fov_\\w+|viewmodel\\w+|m_\\w+|map_\\w+|r_\\w+|net_\\w+|cl_\\w+|tf_\\w+|sv_\\w+|con_\\w+|obj_\\w+|hud_\\w+|sixense_\\w+|windows_\\w+|snd_\\w+|mat_\\w+|mp_\\w+|flex_\\w+|lod_\\w+|rope_\\w+|glow_\\w+|demo_\\w+|func_\\w+|violence_\\w+|dsp_\\w+|props_\\w+|ragdoll_\\w+|ai_\\w+|g_\\w+|cam_\\w+|sb_\\w+|mod_\\w+|nav_\\w+|filesystem_\\w+|budget__\\w+|c_\\w+|cache_\\w+|replay_\\w+|vr_\\w+|pyro_\\w+|nb_\\w+|ent_\\w+|fire_\\w+|fog_\\w+|ifm_\\w+|ds_\\w+|host_\\w+|cc_\\w+|g_\\w+|gameui_\\w+|full|blink_\\w+|bloodspray|bot|bot_\\w+|set\\w+|zoom\\w+|prec\\w+|adsp\\w+|kill|disp\\w+|fps\\w+|engine_\\w+|build\\w+|anim\\w+|phoneme\\w+|muzzleflash\\w+|fx_\\w+|bugreporter_\\w+|clientport|hostport|lzma_\\w+|sys\\w+|tv_\\w+|vgui_\\w+|voice_\\w+|mirv_\\w+|weapon_\\w+|wc_\\w+|vscript\\w+|vprof_\\w+|vortex_\\w+|viewanim_\\w+|video_\\w+|user\\w+|v_\\w+|training_\\w+|third\\w+|texture_\\w+|test_\\w+|telemetry_\\w+|vaudio_\\w+|sk_\\w+|script_\\w+|scene_\\w+|sc_\\w+|save_\\w+|rr_\\w+|report_\\w+|rcon\\w+|prop\\w+|plugin\\w+|phys\\w+|particle_\\w+|overview\\w+|npc_\\w+|mem_\\w+|memory\\w+|mm_\\w+|item_\\w+|hammer_\\w+|g15_\\w+|fs_\\w+|flush\\w+|dump\\w+|dt\\w+|dev_\\w+|debug\\w+|commentary\\w+|collision_\\w+|ch_\\w+|budget_\\w+|bsp_\\w+|async_\\w+|autoaim_\\w+|bench\\w+|)\\b"
 				}
 			]
 		},
