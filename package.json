@@ -2,8 +2,8 @@
   "name": "language-tf2-cfg",
   "displayName": "TF2 .cfg Syntax Highlighting",
   "description": "Syntax support for Source Engine scripting",
-  "version": "0.0.6",
-  "publisher": "reeddunkle",
+  "version": "0.0.7",
+  "publisher": "xCape",
   "engines": {
     "vscode": "^1.24.0"
   },
@@ -23,10 +23,10 @@
     "highlight"
   ],
   "license": "Unlicense",
-  "repository": "https://github.com/reed-tf2/language-tf2-cfg",
+  "repository": "https://github.com/XcapeEst/language-tf2-cfg",
   "bugs": {
-    "url": "https://github.com/reed-tf2/language-tf2-cfg/issues",
-    "email": "reed.tf2@gmail.com"
+    "url": "https://github.com/XcapeEst/language-tf2-cfg/issues",
+    "email": "mark.veiermann@gmail.com"
   },
   "contributes": {
     "languages": [
