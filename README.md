@@ -79,9 +79,18 @@ Note that you can change/control the [Color Theme](https://code.visualstudio.com
 
 ## Release Notes
 
+### v0.0.7
+
+- Renamed the settings rule to commands.
+- Fixed bind and unbind key regex.
+- Added regex for set* commands.
+- Created a pattern for echo strings
+- Fixed partial variable rule matches inside strings.
+- Added several more matches for TF2, P-REC, and HLAE commands.
+
 ### v0.0.6
 
-- :wrench: Improve regex
+- Improve regex
 
 ## Unlicense
 

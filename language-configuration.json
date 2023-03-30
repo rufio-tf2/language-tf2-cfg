@@ -1,8 +1,0 @@
-// https://code.visualstudio.com/docs/extensionAPI/extension-points#_contributeslanguages
-{
-  "comments": {
-    "lineComment": "//"
-  },
-  "autoClosingPairs": [["\"", "\""]],
-  "surroundingPairs": [["\"", "\""]]
-}
