@@ -5,31 +5,47 @@ Adds syntax highlighting support for `.cfg` files
 ## Features
 
 <blockquote>
-  <p><code>medic.cfg</code> adapted from b4nny's <a href="https://drive.google.com/file/d/1S9bcuSHauGUSNlrOP93zm5kOlynnWG8V/view" target="_blank">config</a>
+  <p> Example config</a>
 </blockquote>
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/SSHPKrn.png" alt="Example without syntax highlighting" /></td>
-    <td><img src="https://i.imgur.com/OCPCUSP.png" alt="Example with syntax highlighting" /></td>
+    <td><img src="https://i.imgur.com/XmgBBVj.png" alt="Example without syntax highlighting" /></td>
+    <td><img src="https://i.imgur.com/Y43gI9s.png" alt="Example with syntax highlighting" /></td>
   </tr>
   <tr>
     <td><i>Plain Text</i></td>
-    <td><i>Using the <code><b>Dark+ (default dark)</b></code> theme</i></td>
+    <td><i>Using the <code><b>Monokai Pro</b></code> theme</i></td>
   </tr>
 </table>
 
-This is the grammar I'm tagging:
+### Used grammar
 
-- Comment
-- Command
-  - Unknown (deprecated, unused, or just unknown)
-  - [Buttons/Keys](https://wiki.teamfortress.com/wiki/Scripting#List_of_key_names) (`SPACE`, `MOUSE1`)
-  - Actions (`+attack`, `say_team`)
-  - Settings (`alias`, `bind`, `r_drawviewmodel`)
-- Numeric-Literal
-- Variable (custom commands)
-- Macros (`"+jump; +duck; +attack;"`)
-- Punctuation-Semicolon
+- ### string.quoted.double.cfg
+  Used in say, echo & exec.
+- ### variable.other.readwrite.cfg
+  Normal text, alias commands, unrecognized commands.
+- ### constant
+  - ### .numeric
+    ConVar constants, numbers.
+  - ### .other.key
+    `MOUSE1`, `SPACE`, `F3`
+- ### comment.line.double-slash.c
+  Comments
+- ### support
+  - ### .function
+    - ### .cfg.toggle
+      Action commands: `+attack2`, `-jump`, `+use_action_slot_item`.
+    - ### .cfg.argument
+      Argument action commands: `wait 3`, `taunt_by_name Taunt: Schaudenfreunde`, `addcond 91`.
+    - ### .cfg.trigger
+      Trigger action commands: `kill`, `mp_forcewin`, `voice_menu1`.
+  - ### .variable
+    - ### .cfg
+      Console commands: `mat_picmip`, `sv_cheats`, `sensitivity`.
+    - ### .cfg.addon
+      Addon commands: `prec_mode`.
+- ### invalid.deprecated.cfg
+  Deprecated commands and actions: `g_ragdoll_fadespeed`, `god`, `mat_parallaxmap`.
 
 ## Install
 
@@ -72,25 +88,30 @@ Note that you can change/control the [Color Theme](https://code.visualstudio.com
 
 ## Known Issues
 
-- Not [all](https://developer.valvesoftware.com/wiki/List_of_TF2_console_commands_and_variables) commands have been included yet
-- Lazy regex checking, such as `r_\\w+` to mark anything that starts with `r_`, but really should only include exact commands
 - My regex has not been reviewed and there's potentially a smarter way to be doing some of the things
 - Ideally there'd be a custom color theme with property scope names (currently I'm using at least one `.js` name)
 
 ## Release Notes
 
+### v0.0.8
+
+- Improved regular expression.
+  - Added matches for all Team Fortress 2 commands.
+  - Improved syntax highlighting for strings and command chains.
+  - Shortened regex.
+- Improved syntax highlighting for themes.
 ### v0.0.7
 
 - Renamed the settings rule to commands.
-- Fixed bind and unbind key regex.
-- Added regex for set* commands.
+- Fixed bind and unbind key regular expression.
+- Added regular expression for `set*` commands.
 - Created a pattern for echo strings
 - Fixed partial variable rule matches inside strings.
 - Added several more matches for TF2, P-REC, and HLAE commands.
 
 ### v0.0.6
 
-- Improve regex
+- Improved regular expression
 
 ## Unlicense
 
